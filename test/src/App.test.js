@@ -20,3 +20,11 @@ test('renders input-email', () => {
   
 	
 });
+
+test('renders button', () => {
+  let wrapper = shallow(<Button />);
+	let actual = wrapper.find("button").hasClass("buttonClass");
+	let expected = true;
+	expect(actual).toBe(expected);
+
+});
